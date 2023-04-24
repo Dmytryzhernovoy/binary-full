@@ -1,0 +1,613 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$breakpoint_xxl: 776px;
+$breakpoint_xl: 1024px;
+$breakpoint_nd: 800px;
+$breakpoint_sm: 576px;
+$breakpoint_ss: 360px;
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #ffff;
+
+}
+
+.viewpage {	
+	background: url("../New/bg2.png")no-repeat #5555;
+	background-size: cover;
+  	background-position: center;
+	background-blend-mode:hard-light;
+	min-width: 800px;
+	margin: 0 auto;
+
+	@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd) {
+		&__logo{
+			img{
+  			transform: scale(1.2);
+			}
+		}
+	}
+	&__logo {
+		padding: 100px 0 0 0 ;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 100px;
+
+	}
+	&__text {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		color: #ffff;}
+	&__maintext {
+		margin-bottom: 15px;
+		p{
+			font-family: 'Bruno Ace SC', cursive;
+			font-size: 32px;
+			font-weight: 900;
+		}}
+	&__secondtext {
+		padding: 0 0 30px 0;
+		border-bottom:3px solid #fff;
+		width: 400px;
+		margin: 0 auto;
+		
+		p{
+			font-family: 'Bruno Ace SC', cursive;
+			font-size: 22px;
+			font-weight: 300;
+		}}
+	&__moreinform {
+		margin-top: 100px;
+		height: 100px;
+		text-align: center;
+		a{
+			text-decoration: none;
+			color:#ffff;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 16px;
+			padding: 10px 30px;
+			border: 1px solid #ffff;
+			&:hover{
+				background-color:#DCD943 ;
+			}
+			&:active{
+				background-color:#48CA3E ;
+			}
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd) {
+					padding: 15px 45px;
+				}
+		}
+		img{
+			margin-top: 50px;
+
+		}
+	}
+	
+}
+
+.header {
+	margin-top: 0px;
+	height: 50px;
+	box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.3);
+	min-width: 800px;
+	margin: 0 auto;
+
+	&__main {
+
+		ul{
+			display: flex;
+			justify-content: center;
+			line-height: 50px;
+		}
+		li{
+			margin: 0 20px;
+			&:first-child a {
+			color: #ada074;
+		}
+		}
+		a{
+
+			font-weight: 400;
+			font-size: 16px;
+			text-decoration: none;
+			color: #000;
+			text-transform: uppercase;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.aboutpage {
+	min-width: 800px;
+	margin: 0 auto;
+	line-height: 2;
+	&__1-block {
+		margin:125px 0 50px 0;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			margin: 100px 0 50px 0;
+		}
+	}
+	&__tittle {
+		width: 	300px;
+		margin: 0 auto;
+		border-bottom: 1px solid;
+		p{
+			font-weight: 700;
+			font-size: 36px;
+			text-transform: uppercase;
+			text-align: center;
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd) {
+				font-size: 48px;
+			}
+
+
+		}
+	}
+	&__subtittle {
+		max-width: 660px;
+		margin: 0 auto;
+		text-align: center;
+		p{
+			margin: 60px 0 0 0;
+			color: #8F8F8F;
+			font-size: 16px;
+			font-weight: 300;
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd) {
+				font-size: 20px;
+			}
+
+		}
+	}
+	&__2-block {
+		max-width: 800px;
+		margin: 0 auto;
+
+	}
+	&__colomnblock {
+		display:flex;
+		margin: 0 30px;
+		flex:0 0 33.333%;
+		margin: 0 20px;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd) {
+			display: block;
+		}
+
+	}
+	&__insidecolomn {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    padding:0 20px;
+	    margin: 0 0 75px 0;
+
+	}
+	&__icon {
+		background: url("../New/circle.png")center no-repeat;
+		padding: 30px;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+		background-size: 150px 150px;
+		padding: 60px;
+		img{
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+				width: 84px;
+				height: 64px;
+			}
+		}
+	}
+	}
+	&__icon-3{
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			width: 64px;
+			height: 64px;
+		}
+	}
+	&__icon-3{
+		margin: 0 0 0 10px;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			width:84px; 
+			height:64px;
+		}
+	}
+	&__colomntittle {
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	&__colomnsubtittle {
+		margin-top: 20px;
+		text-align: center;
+		color: #8F8F8F;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd) {
+			width:300px;
+		}
+	}
+}
+
+.portfoliopage {
+	background: url("../New/bg-gray.png")center/cover;
+	min-width: 800px;
+	margin: 0 auto;
+
+	&__1-block {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	&__tittle {
+		padding: 100px 0 30px 0;
+		width: 	300px;
+		margin: 0 auto;
+		border-bottom: 1px solid;
+		p{
+			font-weight: 700;
+			font-size: 36px;
+			text-transform: uppercase;
+			text-align: center;
+
+	}}
+	&__nav {
+		margin-top: 30px;
+		margin-bottom: 100px;
+		ul{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		li{
+			padding: 0 30px;
+		}
+		a{
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #000;
+			font-weight: 400;
+			font-size: 16px;
+		}
+	}
+	&__2-block {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	&__content {
+		background: url("../New/gray-squard.png")center;
+		width: 448px;
+		height: 304px;
+		margin: 10px;
+	}
+	&__3-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 60px;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			padding: 80px;
+		}
+		a{
+			text-decoration: none;
+			color:#000;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 16px;
+			padding: 10px 30px;
+			border: 1px solid #000;
+			&:hover{
+				background-color:#DCD943 ;
+			}
+			&:active{
+				background-color:#48CA3E ;
+			}
+			
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+				padding: 15px 45px;
+
+			}
+		}
+
+	} 
+}
+
+.parterspage {
+	background: url("../New/bg-header.png")no-repeat;
+	background-size: 110%;
+  	background-position: center;
+	height: 390px;
+	min-width: 800px;
+	margin: 0 auto;
+
+	&__1-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 75px 0 75px 0 ;
+	}
+	&__tittle {
+		p{
+			font-size: 24px;
+			color: #fff;
+			font-weight: 300;
+
+		}
+	}
+	&__2-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		width: 500px;
+		margin: 0 auto;
+	}
+	&__icon {
+		background: url("../New/logo1.png")center no-repeat;
+		width: 200px;
+		height: 75px;
+	}
+	&__icon2 {
+		background: url("../New/logo2.png")center no-repeat;
+		width: 200px;
+		height: 75px;
+	}
+	&__icon3 {
+		background: url("../New/logo3.png")center no-repeat;
+		width: 200px;
+		height: 75px;
+	}
+	&__icon4 {
+		background: url("../New/logo4.png")center no-repeat;
+		width: 350px;
+		height: 75px;
+	}
+}
+
+.contactpage {
+	width: 800px;
+	margin: 0 auto;
+	&__1-block {
+		text-align: center;
+		width: 	300px;
+		margin: 0 auto;
+		border-bottom: 1px solid;
+		p{
+			color: #000;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 36px;
+			padding: 100px 0 20px 0;
+			
+		}
+	}
+	&__tittle {}
+	&__2-block {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 100px auto;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			display: block;
+			width: 500px;
+			margin: 100px auto 50px auto;
+		}
+
+	}
+	&__3-block {
+		width: 350px;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			width:500px;
+			margin: 0 auto;
+		}
+	}
+	&__mainaisle{
+		display: flex;
+		align-items: center;
+		margin: 0 0 75px 0;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			display: block;
+			margin: 0  0 50px 0;
+		}
+
+
+	}
+	&__yourname {
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 700;
+		padding: 0 50px 0 0;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			margin: 0 0 50px 0;
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+		input{
+			background-color:#EAEAEA ;
+			width: 150px;
+			height: 30px;
+			border-top:2px solid #818181;
+			padding: 5px;
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+				width: 250px;
+			}
+		}
+	}
+	&__youremail {
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 700;
+		p {
+			margin-bottom: 10px;
+		}
+		input{
+			background-color:#EAEAEA ;
+			width: 150px;
+			height: 30px;
+			border-top:2px solid #818181;
+			padding: 5px;
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+				width: 400px;
+			}
+		}
+	}
+	&__massage {
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 700;
+		p {
+			margin-bottom: 10px;
+		}
+		textarea{
+			resize: none;
+			background-color:#EAEAEA ;
+			width: 350px;
+			height: 130px;
+			border-top:2px solid #818181;
+  			padding: 5px;
+  			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+  				width: 500px;
+  			}
+		}
+	}
+	&__send {
+		margin: 30px 0 100px 0;
+		text-align: right;
+		a{
+			text-decoration:none;
+			font-weight: 700;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #000;
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+				font-size: 20px;
+				padding: 20px;
+			}
+		}
+	}
+	&__4-block {
+		width: 275px;
+		margin: 0 0 0 75px;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			width: 300px;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	&__text {
+		p{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 2;
+			@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+				line-height: 1.4;
+			}
+
+		}
+	}
+	&__postma {
+		margin: 50px 0 0 0;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			margin: 25px 0 0 0;
+		}
+		p{
+			font-size: 14px;
+			font-weight: 800;
+		}
+	}
+	&__icons {
+		margin: 25px 0 10px 0;
+		display:flex;
+		@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+			justify-content: center;align-items: center;
+		}
+	}
+	&__icon {
+			background: url("../New/round.png")center no-repeat;
+			width: 30px;
+			height: 30px;
+			margin: 0 10px 0 0;
+			img{
+				margin: 7px 0 0 10px;
+				@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+					margin: 7px 0 0 0;
+				}
+
+			}
+	}
+	&__icon2 {
+		background: url("../New/round.png")center no-repeat;
+		width: 30px;
+		height: 30px;
+		img{
+				margin: 7px 0 0 9px;
+				@media (min-width: $breakpoint_ss) and (max-width:$breakpoint_nd){
+					margin: 7px 0 0 2px;
+				}
+
+			}
+	}
+	&__email {
+		p{
+			font-size: 16px;
+		}
+		a{
+			text-decoration:none;
+			color: #000;
+			font-weight: 800;
+		}
+
+	}
+}
+
+
+.footer {
+	background-color: #393939;
+	width:100%;
+	min-width: 800px;
+	margin: 0 auto;
+	&__main {
+		width: 360px;
+		margin: 0 auto;
+	}
+	&__logo {
+		padding: 50px 0 ;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__nav {
+		ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+			li{
+				padding: 0 10px;
+			}
+		}
+		a{
+			text-decoration: none;
+			color: #a4a4a4;
+			font-size: 16px;
+			&:hover{
+				text-decoration: underline ;
+			}
+		}
+	}
+	&__copyright {
+		margin: 25px 0 0 0;
+		padding: 0 0 50px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		p{
+			color: #6c6c6c;
+		}
+	}
+}
+
